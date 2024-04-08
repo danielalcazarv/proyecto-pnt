@@ -7,15 +7,22 @@ body {
     font-family: "Roboto", sans-serif
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9990;
+}
+
 .navbar {
     display: flex;
-    background-color: black;
+    background-color:rgb(30, 30, 30);
     height: 10vh;
     align-items: center;
     justify-content: center;
 }
 
-ul{
+.nav-list{
     margin: 0 auto;
 }
 
@@ -63,6 +70,7 @@ ul{
 
 .menu {
     margin: 0 auto;
+    margin-top: 2rem;
     max-width: 1600px;
     width: 100%;
 }
@@ -108,4 +116,11 @@ ul{
 
 .cards .menu-precio {
     text-align: right;
+}
+
+footer{
+    margin-top: 2rem;
+    padding: 2rem;
+    background: rgb(30, 30, 30);
+    color: lightgrey;
 }
