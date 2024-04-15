@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>La Morfineta</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <ul class="nav-list">
+                <li  class="nav-item">
+                    <a class="logo" href="./main.html"> 
+                        La Morfineta
+                    </a>
+                </li>
+                <!-- CAMBIAR A DROPDOWN
+                <li  class="nav-item">
+                    <a href="#chef"> 
+                        Sugerencias del chef
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#entree"> 
+                        Entradas
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ppal"> 
+                        Platos Principales
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#postre"> 
+                        Postres
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bebida-sin"> 
+                        Bebidas sin Alcohol
+                    </a>
+                </li>
+                -->
+                <li class="nav-item">
+                    <a href="./main.html"> 
+                        MENÚ
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="./reservas.html"> 
+                        RESERVAS
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="main-reservas">
+        <div class="form">
+            <h2>Reserva tu mesa</h2>
+            <form class="reserva-form" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input placeholder="Ingrese su nombre" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Número Telefónico:</label>
+                    <input placeholder="Ingres su teléfono" type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input placeholder="Ingres su correo" type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="fecha">Fecha de Reserva:</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+                <div class="form-group">
+                    <label for="hora">Hora de Reserva:</label>
+                    <select id="hora" name="hora" required>
+                        <option value="">Selecciona una hora</option>
+                        <option value="ALMUERZO 13 horas">ALMUERZO 13 horas</option>
+                        <option value="ALMUERZO 14 horas">ALMUERZO 14 horas</option>
+                        <option value="CENA 20 horas">CENA 20 horas</option>
+                        <option value="CENA 21 horas">CENA 21 horas</option>
+                        <option value="CENA 22 horas">CENA 22 horas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cantidad-personas">Cantidad de Personas:</label>
+                    <input placeholder="Hasta 10 personas" type="number" id="cantidad-personas" name="cantidad-personas" min="1" max="10" required>
+                </div>
+                <div class="form-group">
+                    <label for="mesa-terraza">¿Mesa en Terraza?</label><br>
+                    <input type="radio" id="mesa-terraza-si" name="mesa-terraza" value="si" required>
+                    <label for="mesa-terraza-si">Sí</label>
+                    <input type="radio" id="mesa-terraza-no" name="mesa-terraza" value="no">
+                    <label for="mesa-terraza-no">No</label>
+                </div>
+                <button type="submit">Enviar Reserva</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>LUGAR: Av. Rivadavia 812</p>
+        <P>TELÉFONO: 11 2233 4455</P>
+        <div>
+            <a href="http://whatsapp.com">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="http://facebook.com">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="http://instagram.com">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="http://twitter.com">
+                <i class="bi bi-twitter-x"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
